@@ -1,6 +1,6 @@
 {
   "name": "edlab-node-skeleton",
-  "version": "1.0.4",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
