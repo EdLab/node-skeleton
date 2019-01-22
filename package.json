@@ -1,13 +1,14 @@
 {
   "name": "edlab-node-skeleton",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "EdLab Node.js Project Skeleton",
   "main": "index.js",
+  "repository": "https://github.com/EdLab/node-skeleton",
   "scripts": {
     "bump": "gulp bump",
     "bump:minor": "gulp bump-minor",
     "bump:major": "gulp bump-major",
-    "dev": "pm2 start ecosystem.config.js --only pk-dev --no-daemon"
+    "dev": "pm2 start ecosystem.config.js --only app-dev --no-daemon"
   },
   "author": "",
   "license": "ISC",

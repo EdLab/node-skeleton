@@ -10,7 +10,9 @@ if (AppConfig.isDevelopment) {
   const notifier = require('node-notifier');
   notifier.notify({
     title: 'Application Started',
-    message: `Started on port ${PORT} in ${AppConfig.env} mode`
+    message: `Started on port ${PORT} in ${AppConfig.env} mode`,
+    timeout: 5,
+    open: `http://localhost:${PORT}`
   });
 }
 Logger.info(`Started on port ${PORT} in ${AppConfig.env} mode`)
