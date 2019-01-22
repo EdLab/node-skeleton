@@ -1,0 +1,41 @@
+{
+  "name": "edlab-node-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bump": "gulp bump",
+    "bump:minor": "gulp bump-minor",
+    "bump:major": "gulp bump-major",
+    "dev": "pm2 start ecosystem.config.js --only pk-dev --no-daemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-member-expression-literals": "^7.2.0",
+    "@babel/plugin-transform-property-literals": "^7.2.0",
+    "@babel/plugin-transform-react-display-name": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.2.0",
+    "eslint": "^5.12.1",
+    "node-notifier": "^5.3.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.1",
+    "dotenv": "^6.2.0",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.4",
+    "moment": "^2.23.0",
+    "morgan": "^1.9.1",
+    "pm2": "^3.2.9",
+    "winston": "^3.1.0"
+  }
+}

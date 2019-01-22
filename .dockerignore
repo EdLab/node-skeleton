@@ -1,0 +1,8 @@
+node_modules
+.env
+.git
+*.md
+.tmp
+public
+version.txt
+server/scripts
