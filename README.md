@@ -1,5 +1,33 @@
 # EdLab Node.js Skeleton
 
+File Structure
+```
+.
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── config
+│   ├── app_config.js
+│   ├── app_config_private.js
+│   ├── constants.js
+│   └── index.js
+├── ecosystem.config.js
+├── gulpfile.js
+├── jenkins.json
+├── package-lock.json
+├── package.json
+├── server
+│   ├── app.js
+│   ├── index.js
+│   ├── lib
+│   │   ├── Logger.js
+│   │   └── Response.js
+│   └── routes
+│       └── error.js
+└── test
+    └── basic.test.js
+```
+
 ## Development
 ### Start development server
 ```
@@ -31,3 +59,4 @@ npm run build
 ```
 npm run start:docker
 ```
+
