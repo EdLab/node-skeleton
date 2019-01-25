@@ -1,6 +1,6 @@
 {
   "name": "edlab-node-skeleton",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "EdLab Node.js Project Skeleton",
   "main": "index.js",
   "repository": "https://github.com/EdLab/node-skeleton",
@@ -8,10 +8,12 @@
     "bump": "gulp bump",
     "bump:minor": "gulp bump-minor",
     "bump:major": "gulp bump-major",
-    "dev": "pm2 start ecosystem.config.js --only app-dev --no-daemon"
+    "dev": "pm2 start ecosystem.config.js --only app-dev --no-daemon",
+    "debug": "node --inspect --trace-warnings --trace-deprecation server",
+    "start:prod": "pm2-docker start ecosystem.config.js --only app-prod"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "edlabit@tc.columbia.edu",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.3.0",

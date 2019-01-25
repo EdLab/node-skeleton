@@ -14,6 +14,8 @@ RUN cp /usr/share/zoneinfo/$TZ /etc/localtime && \
     echo $TZ > /etc/timezone
 
 WORKDIR /prj
+
+# Faster Checksum
 COPY ./package.json /prj/package.json
 COPY ./package-lock.json /prj/package-lock.json
 RUN npm i
@@ -24,4 +26,6 @@ RUN npm run build
 
 EXPOSE 3000
 
+#typically npm run start:docker
 ENTRYPOINT ["npm", "run"]
+
