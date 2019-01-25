@@ -78,3 +78,9 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Production Build files
+dist/
+
+# Testc Report files
+test/report

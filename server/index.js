@@ -7,13 +7,13 @@ const server = http.createServer(app)
 const PORT = process.env.PORT || AppConfig.PORT || 3000
 server.listen(PORT)
 if (AppConfig.isDevelopment) {
-  const notifier = require('node-notifier');
+  const notifier = require('node-notifier')
   notifier.notify({
     title: 'Application Started',
     message: `Started on port ${PORT} in ${AppConfig.env} mode`,
     timeout: 5,
-    open: `http://localhost:${PORT}`
-  });
+    open: `http://localhost:${PORT}`,
+  })
 }
 Logger.info(`Started on port ${PORT} in ${AppConfig.env} mode`)
 

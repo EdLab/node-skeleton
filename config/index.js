@@ -8,17 +8,17 @@ const localConfig = require('dotenv').config()
 const version = require('../jenkins.json').version
 
 let AppConfig = {
-    env: env,
-    isDevelopment: env === 'development',
-    isProduction: env === 'production' || env === 'integration',
-    isTesting: env === 'test',
-    appVersion: version,
+  env: env,
+  isDevelopment: env === 'development',
+  isProduction: env === 'production' || env === 'integration',
+  isTesting: env === 'test',
+  appVersion: version,
 }
 AppConfig = Object.assign(
-    AppConfig,
-    publicConfig(env),
-    privateConfig(env),
-    localConfig.parsed)
+  AppConfig,
+  publicConfig(env),
+  privateConfig(env),
+  localConfig.parsed)
 
 global.AppConfig = AppConfig
 global.Constants = Constants
