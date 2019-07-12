@@ -60,3 +60,27 @@ npm run build
 npm run start:docker
 ```
 
+
+
+# Clone the repository
+git clone https://github.com/EdLab/node-skeleton.git new-project
+# Go inside the directory
+cd new-project
+# Install all dependencies
+npm i
+# Start development server
+npm run dev
+# Test your code
+npm run test
+# Build for production
+npm run build
+# Start production server
+npm start
+
+- node-backend skeleton
+- node-fullstack skeleton
+- docker node application with prod
+
+https://semaphoreci.com/community/tutorials/dockerizing-a-node-js-web-application
+https://hackernoon.com/full-stack-web-application-using-react-node-js-express-and-webpack-97dbd5b9d708
+https://medium.com/@binyamin/creating-a-node-express-webpack-app-with-dev-and-prod-builds-a4962ce51334

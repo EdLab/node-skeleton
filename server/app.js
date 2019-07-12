@@ -14,7 +14,7 @@ global.Response = Response
 
 const app = express()
 app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'jade')
+app.set('view engine', 'pug')
 
 if (AppConfig.isDevelopment) {
   const notifier = require('node-notifier')
