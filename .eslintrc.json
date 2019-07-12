@@ -10,7 +10,8 @@
         "Utility": true
     },
     "extends": [
-        "eslint:recommended"
+        "eslint:recommended",
+        "prettier"
     ],
     "parserOptions": {
         "sourceType": "module",

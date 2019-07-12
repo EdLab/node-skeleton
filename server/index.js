@@ -6,6 +6,7 @@ const server = http.createServer(app)
 
 const PORT = process.env.PORT || AppConfig.PORT || 3000
 server.listen(PORT)
+
 if (AppConfig.isDevelopment) {
   const notifier = require('node-notifier')
   notifier.notify({
@@ -15,6 +16,7 @@ if (AppConfig.isDevelopment) {
     open: `http://localhost:${PORT}`,
   })
 }
+
 Logger.info(`Started on port ${PORT} in ${AppConfig.env} mode`)
 
 process.on('uncaughtException', (err) => {
