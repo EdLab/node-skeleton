@@ -13,7 +13,7 @@ module.exports = {
     },
   }, {
     name: 'app-prod',
-    node_args: '--max-old-space-size=4096',
+    node_args: '--optimize_for_size --max_old_space_size=500',
     script: 'dist/index.js',
     source_map_support: false,
     watch: false,

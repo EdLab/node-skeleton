@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:12-alpine
 
 LABEL maintainer="EdLab IT <edlabit@tc.columbia.edu>"
 
