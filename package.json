@@ -27,7 +27,7 @@
     "eslint-config-prettier": "^6.3.0",
     "mocha": "^6.2.1",
     "mochawesome": "^4.1.0",
-    "node-notifier": "^5.4.3",
+    "node-notifier": "^6.0.0",
     "nyc": "^14.1.1",
     "supertest": "^4.0.2"
   },
