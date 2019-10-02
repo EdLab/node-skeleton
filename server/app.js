@@ -37,18 +37,22 @@ app.use(AppConfig.isDevelopment ?
 app.use(bodyParser.json({
   limit: AppConfig.HTTP_BODY_LIMIT,
 }))
-app.use(session({
-  secret: 'SESSION_KEY',
-  resave: false,
-  saveUninitialized: true,
-  cookie: {
-    secure: true,
-  },
-}))
+
+// Uncomment this if you need session support
+// app.use(session({
+//   secret: 'SESSION_KEY',
+//   resave: false,
+//   saveUninitialized: true,
+//   cookie: {
+//     secure: true,
+//   },
+// }))
 
 //Router
-app.get('/version', (req, res)=>{
-  res.json({version: AppConfig.appVersion})
+app.get('/version', (req, res) => {
+  res.json({
+    version: AppConfig.appVersion,
+  })
 })
 app.get('/', (req, res) => {
   res.json({
