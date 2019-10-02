@@ -13,8 +13,6 @@ File Structure
 │   ├── constants.js
 │   └── index.js
 ├── ecosystem.config.js
-├── gulpfile.js
-├── jenkins.json
 ├── package-lock.json
 ├── package.json
 ├── server
@@ -38,7 +36,7 @@ npm i
 npm run dev
 ```
 
-### Testing
+### Test
 
 ```
 npm run test
@@ -62,44 +60,27 @@ npm version major
 npm run build
 ```
 
-### Start server under docker
+### Start server
+
+```
+npm start
+```
+
+### Start server with Docker
 
 ```
 npm run start:docker
 ```
 
-## Clone the repository
+## Start new project
 
 ```
-git clone https://github.com/EdLab/node-skeleton.git new-project
+git clone https://github.com/EdLab/node-skeleton.git NEW_PROJECT && cd NEW_PROJECT && npm i
 ```
-
-## Go inside the directory
-
-cd new-project
-
-## Install all dependencies
-
-npm i
-
-## Start development server
-
-npm run dev
-
-## Test your code
-
-npm run test
-
-## Build for production
-
-npm run build
-
-## Start production server
-
-npm start
 
 ### References
 
+- https://github.com/goldbergyoni/nodebestpractices
 - https://semaphoreci.com/community/tutorials/dockerizing-a-node-js-web-application
 - https://hackernoon.com/full-stack-web-application-using-react-node-js-express-and-webpack-97dbd5b9d708
 - https://medium.com/@binyamin/creating-a-node-express-webpack-app-with-dev-and-prod-builds-a4962ce51334

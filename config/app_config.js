@@ -1,22 +1,22 @@
 const configs = {
-    'default': {
-        HTTP_BODY_LIMIT: '50mb',
-        LOG_LEVEL: 'info'
-    },
-    'development': {
+  'default': {
+    HTTP_BODY_LIMIT: '50mb',
+    LOG_LEVEL: 'info',
+  },
+  'development': {
 
-    },
-    'test': {
+  },
+  'test': {
 
-    },
-    'integration': {
+  },
+  'integration': {
 
-    },
-    'production': {
+  },
+  'production': {
 
-    },
+  },
 }
 
 module.exports = (env) => {
-    return Object.assign(configs['default'], configs[env])
+  return Object.assign(configs['default'], configs[env])
 }
