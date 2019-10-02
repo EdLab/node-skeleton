@@ -1,4 +1,5 @@
 # EdLab Node.js Skeleton
+![Template Usage](https://raw.githubusercontent.com/EdLab/node-skeleton/master/.github/template.png)
 
 File Structure
 
